@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{36CD859E-E4B5-3B88-8AE4-9A0004C98382}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\5_Repos\SAE921-GRP4100-SFML\00-Starter\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\5_Repos\SAE921-GRP4100-SFML\00-Starter\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\5_Repos\SAE921-GRP4100-SFML\00-Starter\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\5_Repos\SAE921-GRP4100-SFML\00-Starter\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\00-Starter\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/5_Repos/SAE921-GRP4100-SFML/00-Starter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -SD:/5_Repos/SAE921-GRP4100-SFML -BD:/5_Repos/SAE921-GRP4100-SFML/build --check-stamp-file D:/5_Repos/SAE921-GRP4100-SFML/build/00-Starter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindOpenGL.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\00-Starter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/5_Repos/SAE921-GRP4100-SFML/00-Starter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -SD:/5_Repos/SAE921-GRP4100-SFML -BD:/5_Repos/SAE921-GRP4100-SFML/build --check-stamp-file D:/5_Repos/SAE921-GRP4100-SFML/build/00-Starter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindOpenGL.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\00-Starter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/5_Repos/SAE921-GRP4100-SFML/00-Starter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -SD:/5_Repos/SAE921-GRP4100-SFML -BD:/5_Repos/SAE921-GRP4100-SFML/build --check-stamp-file D:/5_Repos/SAE921-GRP4100-SFML/build/00-Starter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindOpenGL.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\00-Starter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/5_Repos/SAE921-GRP4100-SFML/00-Starter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -SD:/5_Repos/SAE921-GRP4100-SFML -BD:/5_Repos/SAE921-GRP4100-SFML/build --check-stamp-file D:/5_Repos/SAE921-GRP4100-SFML/build/00-Starter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindOpenGL.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\00-Starter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\5_Repos\SAE921-GRP4100-SFML\build\ZERO_CHECK.vcxproj">
+      <Project>{07313769-EC89-3E3F-8906-188B12260555}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\5_Repos\SAE921-GRP4100-SFML\build\00-Starter\00-Starter.vcxproj">
+      <Project>{CDED70F2-9BF3-3832-8FBC-50ED3B2068F5}</Project>
+      <Name>00-Starter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

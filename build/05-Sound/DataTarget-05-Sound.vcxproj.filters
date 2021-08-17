@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\97cf4273c5b7950bd57d29807b7ade19\music.wav.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\97cf4273c5b7950bd57d29807b7ade19\soundFx_Laser.wav.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\97cf4273c5b7950bd57d29807b7ade19\soundFx_Ring.wav.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\58f9873609953608f31f02a7e55d5688\DataTarget-05-Sound.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\05-Sound\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\5_Repos\SAE921-GRP4100-SFML\build\05-Sound\CMakeFiles\DataTarget-05-Sound" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{95CFBEBB-A772-3A83-A288-069C62C0CA7C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

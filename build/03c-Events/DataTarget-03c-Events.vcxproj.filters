@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\Cuphead-SpriteSheet.png.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\Cuphead_Run_01.png.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\Cuphead_Run_02.png.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\Cuphead_Run_03.png.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\NicePng_cuphead-png_228460.png.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\ZeldaDown.png.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\ZeldaLeft.png.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\ZeldaRight.png.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\ZeldaUp.png.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\toppng.com-link-zelda-1-sprite-sheet-432x303.png.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\toppng.com-spelunky-sprite-sheet-952x950.png.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\wall.jpg.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\89c592a6345cd8103523b5798d5096ff\DataTarget-03c-Events.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\CMakeFiles\DataTarget-03c-Events" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{95CFBEBB-A772-3A83-A288-069C62C0CA7C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

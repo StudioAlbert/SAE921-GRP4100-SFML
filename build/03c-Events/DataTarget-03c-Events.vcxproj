@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{25003F3A-B113-376E-8D50-1659735A8102}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>DataTarget-03c-Events</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\Cuphead-SpriteSheet.png.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating data/sprites/Cuphead-SpriteSheet.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead-SpriteSheet.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead-SpriteSheet.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead-SpriteSheet.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead-SpriteSheet.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating data/sprites/Cuphead-SpriteSheet.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead-SpriteSheet.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead-SpriteSheet.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead-SpriteSheet.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead-SpriteSheet.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating data/sprites/Cuphead-SpriteSheet.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead-SpriteSheet.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead-SpriteSheet.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead-SpriteSheet.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead-SpriteSheet.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating data/sprites/Cuphead-SpriteSheet.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead-SpriteSheet.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead-SpriteSheet.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead-SpriteSheet.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead-SpriteSheet.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\Cuphead_Run_01.png.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating data/sprites/Cuphead_Run_01.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead_Run_01.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead_Run_01.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_01.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_01.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating data/sprites/Cuphead_Run_01.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead_Run_01.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead_Run_01.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_01.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_01.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating data/sprites/Cuphead_Run_01.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead_Run_01.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead_Run_01.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_01.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_01.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating data/sprites/Cuphead_Run_01.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead_Run_01.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead_Run_01.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_01.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_01.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\Cuphead_Run_02.png.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating data/sprites/Cuphead_Run_02.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead_Run_02.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead_Run_02.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_02.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_02.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating data/sprites/Cuphead_Run_02.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead_Run_02.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead_Run_02.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_02.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_02.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating data/sprites/Cuphead_Run_02.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead_Run_02.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead_Run_02.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_02.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_02.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating data/sprites/Cuphead_Run_02.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead_Run_02.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead_Run_02.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_02.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_02.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\Cuphead_Run_03.png.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating data/sprites/Cuphead_Run_03.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead_Run_03.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead_Run_03.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_03.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_03.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating data/sprites/Cuphead_Run_03.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead_Run_03.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead_Run_03.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_03.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_03.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating data/sprites/Cuphead_Run_03.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead_Run_03.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead_Run_03.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_03.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_03.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating data/sprites/Cuphead_Run_03.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/Cuphead_Run_03.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/Cuphead_Run_03.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_03.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_03.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\NicePng_cuphead-png_228460.png.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating data/sprites/NicePng_cuphead-png_228460.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/NicePng_cuphead-png_228460.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/NicePng_cuphead-png_228460.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\NicePng_cuphead-png_228460.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\NicePng_cuphead-png_228460.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating data/sprites/NicePng_cuphead-png_228460.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/NicePng_cuphead-png_228460.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/NicePng_cuphead-png_228460.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\NicePng_cuphead-png_228460.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\NicePng_cuphead-png_228460.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating data/sprites/NicePng_cuphead-png_228460.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/NicePng_cuphead-png_228460.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/NicePng_cuphead-png_228460.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\NicePng_cuphead-png_228460.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\NicePng_cuphead-png_228460.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating data/sprites/NicePng_cuphead-png_228460.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/NicePng_cuphead-png_228460.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/NicePng_cuphead-png_228460.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\NicePng_cuphead-png_228460.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\NicePng_cuphead-png_228460.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\ZeldaDown.png.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating data/sprites/ZeldaDown.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaDown.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaDown.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaDown.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaDown.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating data/sprites/ZeldaDown.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaDown.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaDown.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaDown.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaDown.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating data/sprites/ZeldaDown.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaDown.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaDown.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaDown.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaDown.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating data/sprites/ZeldaDown.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaDown.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaDown.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaDown.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaDown.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\ZeldaLeft.png.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating data/sprites/ZeldaLeft.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaLeft.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaLeft.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaLeft.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaLeft.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating data/sprites/ZeldaLeft.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaLeft.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaLeft.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaLeft.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaLeft.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating data/sprites/ZeldaLeft.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaLeft.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaLeft.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaLeft.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaLeft.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating data/sprites/ZeldaLeft.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaLeft.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaLeft.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaLeft.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaLeft.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\ZeldaRight.png.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating data/sprites/ZeldaRight.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaRight.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaRight.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaRight.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaRight.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating data/sprites/ZeldaRight.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaRight.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaRight.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaRight.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaRight.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating data/sprites/ZeldaRight.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaRight.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaRight.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaRight.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaRight.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating data/sprites/ZeldaRight.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaRight.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaRight.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaRight.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaRight.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\ZeldaUp.png.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating data/sprites/ZeldaUp.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaUp.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaUp.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaUp.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaUp.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating data/sprites/ZeldaUp.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaUp.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaUp.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaUp.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaUp.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating data/sprites/ZeldaUp.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaUp.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaUp.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaUp.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaUp.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating data/sprites/ZeldaUp.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/ZeldaUp.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/ZeldaUp.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaUp.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaUp.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\toppng.com-link-zelda-1-sprite-sheet-432x303.png.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating data/sprites/toppng.com-link-zelda-1-sprite-sheet-432x303.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/toppng.com-link-zelda-1-sprite-sheet-432x303.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/toppng.com-link-zelda-1-sprite-sheet-432x303.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating data/sprites/toppng.com-link-zelda-1-sprite-sheet-432x303.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/toppng.com-link-zelda-1-sprite-sheet-432x303.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/toppng.com-link-zelda-1-sprite-sheet-432x303.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating data/sprites/toppng.com-link-zelda-1-sprite-sheet-432x303.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/toppng.com-link-zelda-1-sprite-sheet-432x303.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/toppng.com-link-zelda-1-sprite-sheet-432x303.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating data/sprites/toppng.com-link-zelda-1-sprite-sheet-432x303.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/toppng.com-link-zelda-1-sprite-sheet-432x303.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/toppng.com-link-zelda-1-sprite-sheet-432x303.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\toppng.com-spelunky-sprite-sheet-952x950.png.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating data/sprites/toppng.com-spelunky-sprite-sheet-952x950.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/toppng.com-spelunky-sprite-sheet-952x950.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/toppng.com-spelunky-sprite-sheet-952x950.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating data/sprites/toppng.com-spelunky-sprite-sheet-952x950.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/toppng.com-spelunky-sprite-sheet-952x950.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/toppng.com-spelunky-sprite-sheet-952x950.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating data/sprites/toppng.com-spelunky-sprite-sheet-952x950.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/toppng.com-spelunky-sprite-sheet-952x950.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/toppng.com-spelunky-sprite-sheet-952x950.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating data/sprites/toppng.com-spelunky-sprite-sheet-952x950.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/toppng.com-spelunky-sprite-sheet-952x950.png D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/toppng.com-spelunky-sprite-sheet-952x950.png
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\a6a4bbff94616c0fc40ac18367730b4e\wall.jpg.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating data/sprites/wall.jpg</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/wall.jpg D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/wall.jpg
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\wall.jpg;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\wall.jpg</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating data/sprites/wall.jpg</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/wall.jpg D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/wall.jpg
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\wall.jpg;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\wall.jpg</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating data/sprites/wall.jpg</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/wall.jpg D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/wall.jpg
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\wall.jpg;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\wall.jpg</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating data/sprites/wall.jpg</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -E copy D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/data/sprites/wall.jpg D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/data/sprites/wall.jpg
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\wall.jpg;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\wall.jpg</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\build\CMakeFiles\89c592a6345cd8103523b5798d5096ff\DataTarget-03c-Events.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead-SpriteSheet.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_01.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_02.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_03.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\NicePng_cuphead-png_228460.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaDown.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaLeft.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaRight.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaUp.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\wall.jpg;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead-SpriteSheet.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_01.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_02.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_03.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\NicePng_cuphead-png_228460.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaDown.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaLeft.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaRight.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaUp.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\wall.jpg;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\CMakeFiles\DataTarget-03c-Events</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead-SpriteSheet.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_01.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_02.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_03.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\NicePng_cuphead-png_228460.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaDown.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaLeft.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaRight.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaUp.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\wall.jpg;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead-SpriteSheet.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_01.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_02.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_03.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\NicePng_cuphead-png_228460.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaDown.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaLeft.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaRight.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaUp.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\wall.jpg;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\CMakeFiles\DataTarget-03c-Events</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead-SpriteSheet.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_01.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_02.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_03.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\NicePng_cuphead-png_228460.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaDown.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaLeft.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaRight.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaUp.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\wall.jpg;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead-SpriteSheet.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_01.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_02.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_03.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\NicePng_cuphead-png_228460.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaDown.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaLeft.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaRight.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaUp.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\wall.jpg;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\CMakeFiles\DataTarget-03c-Events</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead-SpriteSheet.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_01.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_02.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\Cuphead_Run_03.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\NicePng_cuphead-png_228460.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaDown.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaLeft.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaRight.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\ZeldaUp.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png;D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\data\sprites\wall.jpg;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead-SpriteSheet.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_01.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_02.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\Cuphead_Run_03.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\NicePng_cuphead-png_228460.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaDown.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaLeft.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaRight.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\ZeldaUp.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-link-zelda-1-sprite-sheet-432x303.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\toppng.com-spelunky-sprite-sheet-952x950.png;D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\data\sprites\wall.jpg;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\CMakeFiles\DataTarget-03c-Events</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\5_Repos\SAE921-GRP4100-SFML\03c-Events\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -SD:/5_Repos/SAE921-GRP4100-SFML -BD:/5_Repos/SAE921-GRP4100-SFML/build --check-stamp-file D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindOpenGL.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -SD:/5_Repos/SAE921-GRP4100-SFML -BD:/5_Repos/SAE921-GRP4100-SFML/build --check-stamp-file D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindOpenGL.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -SD:/5_Repos/SAE921-GRP4100-SFML -BD:/5_Repos/SAE921-GRP4100-SFML/build --check-stamp-file D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindOpenGL.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/5_Repos/SAE921-GRP4100-SFML/03c-Events/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\0_Installs\Cmake\bin\cmake.exe -SD:/5_Repos/SAE921-GRP4100-SFML -BD:/5_Repos/SAE921-GRP4100-SFML/build --check-stamp-file D:/5_Repos/SAE921-GRP4100-SFML/build/03c-Events/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindOpenGL.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\0_Installs\Cmake\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\box2d\box2dConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;D:\0_Installs\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\5_Repos\SAE921-GRP4100-SFML\build\03c-Events\CMakeFiles\DataTarget-03c-Events">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\5_Repos\SAE921-GRP4100-SFML\build\ZERO_CHECK.vcxproj">
+      <Project>{07313769-EC89-3E3F-8906-188B12260555}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
