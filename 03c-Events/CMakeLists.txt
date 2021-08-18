@@ -6,7 +6,7 @@ set (CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set_property(GLOBAL PROPERTY USE_FOLDERS On)
 
-message("START CMAKE " ${CUSTOM_SUB_PROJECT_NAME})
+message("START CMAKE " ${EXECUTABLE_CUSTOM_NAME})
 
 file(GLOB_RECURSE DATA_FILES data/*)
 source_group("Data/" FILES ${DATA_FILES})
@@ -26,7 +26,7 @@ foreach(DATA ${DATA_FILES})
 endforeach()
 
 add_custom_target(
-        DataTarget-${CUSTOM_SUB_PROJECT_NAME}
+        DataTarget-${EXECUTABLE_CUSTOM_NAME}
         DEPENDS ${DATA_BINARY_FILES} ${DATA_FILES})
 
 find_package(OpenGL REQUIRED)
@@ -36,14 +36,14 @@ include_directories(include/)
 
 file(GLOB_RECURSE PLATFORMER_SRC src/*.cpp include/*.h)
 
-add_executable(${CUSTOM_SUB_PROJECT_NAME} ${PLATFORMER_SRC})
-add_dependencies(${CUSTOM_SUB_PROJECT_NAME} DataTarget-${CUSTOM_SUB_PROJECT_NAME})
-target_link_libraries(${CUSTOM_SUB_PROJECT_NAME} PRIVATE sfml-graphics sfml-audio sfml-window sfml-system)
+add_executable(${EXECUTABLE_CUSTOM_NAME} ${PLATFORMER_SRC})
+add_dependencies(${EXECUTABLE_CUSTOM_NAME} DataTarget-${EXECUTABLE_CUSTOM_NAME})
+target_link_libraries(${EXECUTABLE_CUSTOM_NAME} PRIVATE sfml-graphics sfml-audio sfml-window sfml-system)
 
 if(MSVC)
-target_link_libraries(${CUSTOM_SUB_PROJECT_NAME} PRIVATE sfml-main FLAC OpenAL OpenGL Vorbis)
+target_link_libraries(${EXECUTABLE_CUSTOM_NAME} PRIVATE sfml-main FLAC OpenAL OpenGL Vorbis)
 else()
-target_link_libraries(${CUSTOM_SUB_PROJECT_NAME} PRIVATE X11 FLAC UDev OpenAL  ${OPENGL_LIBRARIES} )
+target_link_libraries(${EXECUTABLE_CUSTOM_NAME} PRIVATE X11 FLAC UDev OpenAL  ${OPENGL_LIBRARIES} )
 endif()
 
-target_link_libraries(${CUSTOM_SUB_PROJECT_NAME} PRIVATE box2d::box2d)
+target_link_libraries(${EXECUTABLE_CUSTOM_NAME} PRIVATE box2d::box2d)
