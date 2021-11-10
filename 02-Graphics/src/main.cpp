@@ -40,6 +40,7 @@ int main()
     // define a position
     shape.setOrigin(shape.getRadius() / 2.0f, shape.getRadius() / 2.0f);
     shape.setPosition(center.x / 2.0f, center.y / 2.0f);
+
     // Redefine Size
     shape.setRadius(40.0f);
 

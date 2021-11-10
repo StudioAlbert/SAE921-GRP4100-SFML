@@ -27,8 +27,8 @@ int main()
         //window.clear(yellow);
 
         // Clear with a custom color
-        //sf::Color myColor(100, 60, 75);
-        //window.clear(myColor);
+        sf::Color myColor(100, 60, 75, 100);
+        window.clear(myColor);
 
         
         // on inspecte tous les évènements de la fenêtre qui ont été émis depuis la précédente itération
@@ -47,5 +47,5 @@ int main()
 
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }

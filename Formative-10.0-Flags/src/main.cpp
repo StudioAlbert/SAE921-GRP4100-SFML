@@ -14,7 +14,7 @@ int main()
     window.setVerticalSyncEnabled(true);
     window.setFramerateLimit(30);
 
-
+    sf::CircleShape circle(45);
 
     while (window.isOpen())
     {

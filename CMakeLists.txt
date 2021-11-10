@@ -30,3 +30,6 @@ add_subdirectory ("04-Animation")
 
 set(EXECUTABLE_CUSTOM_NAME "05-Sound")
 add_subdirectory ("05-Sound")
+
+set(EXECUTABLE_CUSTOM_NAME "Formative-10.0-Flags")
+add_subdirectory ("Formative-10.0-Flags")
