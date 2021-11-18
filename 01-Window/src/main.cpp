@@ -20,11 +20,11 @@ int main()
     while (window.isOpen())
     {
         // Clear white
-        //window.clear(sf::Color(255, 255, 255));
+        window.clear(sf::Color(255, 255, 255));
 
         // Clear with a color Const
-        //sf::Color yellow = sf::Color::Yellow;
-        //window.clear(yellow);
+        sf::Color yellow = sf::Color::Yellow;
+        window.clear(yellow);
 
         // Clear with a custom color
         sf::Color myColor(100, 60, 75, 100);

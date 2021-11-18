@@ -31,5 +31,20 @@ add_subdirectory ("04-Animation")
 set(EXECUTABLE_CUSTOM_NAME "05-Sound")
 add_subdirectory ("05-Sound")
 
+set(EXECUTABLE_CUSTOM_NAME "06-Text")
+add_subdirectory ("06-Text")
+
+set(EXECUTABLE_CUSTOM_NAME "07-Fireball")
+add_subdirectory ("07-Fireball")
+
+set(EXECUTABLE_CUSTOM_NAME "08-TransformableDrawable")
+add_subdirectory ("08-TransformableDrawable")
+
 set(EXECUTABLE_CUSTOM_NAME "Formative-10.0-Flags")
 add_subdirectory ("Formative-10.0-Flags")
+
+set(EXECUTABLE_CUSTOM_NAME "Formative-10.1-Mondrian")
+add_subdirectory ("Formative-10.1-Mondrian")
+
+set(EXECUTABLE_CUSTOM_NAME "hero")
+add_subdirectory ("hero")

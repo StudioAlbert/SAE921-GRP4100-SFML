@@ -29,7 +29,7 @@ int main()
 
         while (window.pollEvent(event))
         {
-
+           
             sf::FloatRect visibleArea(0.0f, 0.0f, event.size.width, event.size.height);
 
             switch (event.type)

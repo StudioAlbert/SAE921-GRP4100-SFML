@@ -68,7 +68,9 @@ int main()
         }
         // -------------------------------------------------------------------------------------------------
         // Option B: avec un petit décalage pour faire joli
-        penta.setPosition(smoothRatio * penta.getPosition().x + (1.0f - smoothRatio) * position.x, smoothRatio * penta.getPosition().y + (1.0f - smoothRatio) * position.y);
+        penta.setPosition(
+            smoothRatio * penta.getPosition().x + (1.0f - smoothRatio) * position.x,
+            smoothRatio * penta.getPosition().y + (1.0f - smoothRatio) * position.y);
         
         window.draw(penta);
 

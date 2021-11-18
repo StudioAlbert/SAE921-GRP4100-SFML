@@ -8,11 +8,6 @@
 #include "SFML/Main.hpp"
 #include "SFML/Graphics.hpp"
 
-
-
-
-
-
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(800, 600), "The Game");
@@ -23,6 +18,9 @@ int main()
     // Vertical sync, framerate
     window.setVerticalSyncEnabled(true);
     window.setFramerateLimit(30);
+
+    // Period = nb Miliseconds / Frame Rate
+    constexpr float intPeriod = (1000.0f / 30.0f);
 
     // Animation
     // Load every textures --------------------------------------------------------------------------------------------------
@@ -75,16 +73,12 @@ int main()
         // Graphical Region
         window.clear(sf::Color::Black);
 
-        // Load a texture
-        sprite.setTexture(textures[idxTextures]);
 
         // Every 100ms, we load a new texture
         sf::Time elapsed = clock.restart();
         totalElapsed = totalElapsed + elapsed;
         std::cout << "Counting ..... " << totalElapsed.asSeconds() << std::endl;
 
-        // Period = nb Miliseconds / Frame Rate
-        int intPeriod = (1000 / 30);
 
         if (totalElapsed.asMilliseconds() >= intPeriod) {
             // Picking next texture
@@ -93,11 +87,12 @@ int main()
             totalElapsed = totalElapsed.Zero;
             // Switch to first frame
             if (idxTextures >= textures.size())
-                idxTextures = 0;
+                idxTextures = 5;
             std::cout << "New texture index : " << idxTextures << std::endl;
         }
 
-
+        // Load a texture
+        sprite.setTexture(textures[idxTextures]);
 
         // Display the texture
         window.draw(sprite);
