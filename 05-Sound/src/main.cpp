@@ -122,8 +122,6 @@ int main()
         music.setVolume(volume);
         sound.setVolume(volume);
 
-        window.draw(shape);
-
         // Window Display
         window.display();
 

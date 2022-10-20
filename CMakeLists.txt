@@ -25,6 +25,9 @@ add_subdirectory ("03b-Events")
 set(EXECUTABLE_CUSTOM_NAME "03c-Events")
 add_subdirectory ("03c-Events")
 
+set(EXECUTABLE_CUSTOM_NAME "03d-Events")
+add_subdirectory ("03d-Events")
+
 set(EXECUTABLE_CUSTOM_NAME "04-Animation")
 add_subdirectory ("04-Animation")
 
