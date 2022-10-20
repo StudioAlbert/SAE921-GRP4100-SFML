@@ -33,19 +33,26 @@ int main()
     // https://www.sfml-dev.org/documentation/2.5.1/classsf_1_1Shape.php
     sf::CircleShape shape(50.f);
     // set the shape color to green
-    shape.setFillColor(sf::Color(150, 50, 250, 100));
+    shape.setFillColor(sf::Color(150, 50, 250));
     // set a 10-pixel wide orange outline
-    shape.setOutlineThickness(10.f);
+    shape.setOutlineThickness(0.f);
     shape.setOutlineColor(sf::Color(250, 150, 100));
     // define a position
-    shape.setOrigin(shape.getRadius() / 2.0f, shape.getRadius() / 2.0f);
+    shape.setOrigin(shape.getRadius(), shape.getRadius());
     shape.setPosition(center.x / 2.0f, center.y / 2.0f);
 
     // Redefine Size
     shape.setRadius(40.0f);
 
+    sf::Mouse mouse;
+
     while (window.isOpen())
     {
+
+        window.clear(sf::Color::Black);
+
+        sf::Vector2i pos = sf::Mouse::getPosition(window);
+        shape.setPosition(pos.x, pos.y);
 
         // on inspecte tous les évènements de la fenêtre qui ont été émis depuis la précédente itération
         sf::Event event;
@@ -58,12 +65,13 @@ int main()
 
         }
 
-        // Here we draw
-        // Draw the sprite
-        window.draw(sprite);
-
         // Draw the shape
         window.draw(shape);
+
+    	// Here we draw
+		// Draw the sprite
+        window.draw(sprite);
+
 
         // effacement les tampons de couleur/profondeur
         window.display();

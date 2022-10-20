@@ -17,13 +17,24 @@ int main()
     window.setVerticalSyncEnabled(true);
     window.setFramerateLimit(30);
 
+	sf::Clock clock;
+
     while (window.isOpen())
     {
-        // Clear white
-        window.clear(sf::Color(255, 255, 255));
 
-        // Clear with a color Const
-        sf::Color yellow = sf::Color::Yellow;
+        sf::Time time1 = clock.getElapsedTime();
+        sf::Time time2;
+
+        std::cout << "Frame " << time1.asMilliseconds() << ":" << time2.asMilliseconds() << std::endl;
+
+        time1 = clock.restart();
+
+
+    	// Clear white
+        window.clear(sf::Color(255, 255, 255, 255));
+
+		// Clear with a color Const
+        sf::Color yellow = sf::Color::White;
         window.clear(yellow);
 
         // Clear with a custom color

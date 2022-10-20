@@ -9,130 +9,111 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(800, 600), "SFML First Window");
-    
-    // Basic Setup of the window
-    // Vertical sync, framerate
-    window.setVerticalSyncEnabled(true);
-    window.setFramerateLimit(30);
+	sf::RenderWindow window(sf::VideoMode(800, 600), "SFML First Window");
 
-    // Setting up thh events
-    window.setKeyRepeatEnabled(true);
+	// Basic Setup of the window
+	// Vertical sync, framerate
+	window.setVerticalSyncEnabled(true);
+	window.setFramerateLimit(30);
 
-    // Loading a file as texture
-    sf::Texture up;
-    sf::Texture down;
-    sf::Texture left;
-    sf::Texture right;
-    up.loadFromFile("data/sprites/ZeldaUp.png");
-    down.loadFromFile("data/sprites/ZeldaDown.png");
-    left.loadFromFile("data/sprites/ZeldaLeft.png");
-    right.loadFromFile("data/sprites/ZeldaRight.png");
+	// Setting up thh events
+	window.setKeyRepeatEnabled(true);
 
-    // Using a sprite
-    // https://www.sfml-dev.org/documentation/2.5.1/classsf_1_1Sprite.php
-    sf::Sprite sprite;
-    sprite.setTexture(up);
-    sprite.setOrigin(up.getSize().x / 2.0f, up.getSize().y / 2.0f);
-    const auto center = window.getSize();
-    sprite.setPosition(center.x / 2.0f, center.y / 2.0f);
-    //sprite.setScale(0.33f, 0.33f);
+	// Loading a file as texture
+	sf::Texture up;
+	sf::Texture down;
+	sf::Texture left;
+	sf::Texture right;
+	up.loadFromFile("data/sprites/ZeldaUp.png");
+	down.loadFromFile("data/sprites/ZeldaDown.png");
+	left.loadFromFile("data/sprites/ZeldaLeft.png");
+	right.loadFromFile("data/sprites/ZeldaRight.png");
 
-    sf::Color backgroundColor(sf::Color::Black);
+	// Using a sprite
+	// https://www.sfml-dev.org/documentation/2.5.1/classsf_1_1Sprite.php
+	sf::Sprite sprite;
+	sprite.setTexture(up);
+	sprite.setOrigin(up.getSize().x / 2.0f, up.getSize().y / 2.0f);
+	const auto center = window.getSize();
+	sprite.setPosition(center.x / 2.0f, center.y / 2.0f);
+	//sprite.setScale(0.33f, 0.33f);
 
-    const float speed = 8.0f;
+	sf::Color backgroundColor(sf::Color::Black);
 
-    while (window.isOpen())
-    {
+	const float speed = 8.0f;
 
-        // on inspecte tous les évènements de la fenêtre qui ont été émis depuis la précédente itération
-        sf::Event event;
+	while (window.isOpen())
+	{
 
-        std::cout << "Before while" << std::endl;
-        while (window.pollEvent(event))
-        {
-            
-            sf::Vector2f position;
-            
-            switch (event.type)
-            {
-            
-                // évènement "fermeture demandée" : on ferme la fenêtre
-            case sf::Event::Closed:
-                window.close();
-                break; 
+		// on inspecte tous les évènements de la fenêtre qui ont été émis depuis la précédente itération
+		sf::Vector2f position;
 
-            case sf::Event::KeyPressed:
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+		{
+			// Change texture
+			sprite.setTexture(up);
+			// Move the sprite
+			position = sprite.getPosition();
+			position.y -= speed;
+			sprite.setPosition(position);
 
-                // Test de la valeur de la touche
-                std::cout << "Key pressed : " << event.key.code << std::endl;
-                switch (event.key.code)
-                {
-                case sf::Keyboard::Up:
-                    std::cout << "UP ^^^^^^^^^^^^^^^^^^^^^^^^^^^^" << std::endl;
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+		{
+			// Change texture
+			sprite.setTexture(down);
+			// Move the sprite
+			position = sprite.getPosition();
+			position.y += speed;
+			sprite.setPosition(position);
 
-                    // Change texture
-                    sprite.setTexture(up);
-                    // Move the sprite
-                    position = sprite.getPosition();
-                    position.y -= speed;
-                    sprite.setPosition(position);
-                    break;
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+		{
+			// Change texture
+			sprite.setTexture(left);
+			// Move the sprite
+			position = sprite.getPosition();
+			position.x -= speed;
+			sprite.setPosition(position);
 
-                case sf::Keyboard::Down:
-                    std::cout << "DOWN vvvvvvvvvvvvvvvvvvvvvvvvvvv" << std::endl;
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+		{
+			// Change texture
+			sprite.setTexture(right);
+			// Move the sprite
+			position = sprite.getPosition();
+			position.x += speed;
+			sprite.setPosition(position);
 
-                    // Change texture
-                    sprite.setTexture(down);
-                    // Move the sprite
-                    position = sprite.getPosition();
-                    position.y += speed;
-                    sprite.setPosition(position);
-                    break;
+		}
 
-                case sf::Keyboard::Left:
-                    std::cout << "LEFT <<<<<<<<<<<<<<<<<<<<<<<<<<<" << std::endl;
+		sf::Event event;
+		while (window.pollEvent(event))
+		{
 
-                    // Change texture
-                    sprite.setTexture(left);
-                    // Move the sprite
-                    position = sprite.getPosition();
-                    position.x -= speed;
-                    sprite.setPosition(position);
-                    break;
+			switch (event.type)
+			{
+				// évènement "fermeture demandée" : on ferme la fenêtre
+			case sf::Event::Closed:
+				window.close();
+				break;
 
-                case sf::Keyboard::Right:
-                    std::cout << "RIGHT >>>>>>>>>>>>>>>>>>>>>>>>>>" << std::endl;
 
-                    // Change texture
-                    sprite.setTexture(right);
-                    // Move the sprite
-                    position = sprite.getPosition();
-                    position.x += speed;
-                    sprite.setPosition(position);
-                    break;
+			default:
+				break;
+			}
 
-                default:
-                    break;
-                }
-                break;
-            
-            default:
-                break;
-            }
-            
 
-        }
-        std::cout << "After while" << std::endl;
+		}
 
-        window.clear(backgroundColor);
 
-        window.draw(sprite);
+		// Window Display
+		window.clear(backgroundColor);
+		window.draw(sprite);
+		window.display();
 
-        // Window Display
-
-        window.display();
-
-    }
+	}
 
 }
